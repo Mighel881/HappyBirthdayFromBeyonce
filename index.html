@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Beyoncé</title>
+		<link rel="stylesheet" href="master.css">
+	</head>
+	<body>
+		<div class="navbar">
+			<div id="menu">
+				<div id="hamburger">
+					<div class="bun" style="grid-row: 2"></div>
+					<div class="bun" style="grid-row: 4"></div>
+					<div class="bun" style="grid-row: 6"></div>
+				</div>
+			</div>
+			<div id="logo">BEYONCÉ</div>
+			<div id="right">
+				<div class="navcont" >
+					<img id="search" src="https://beyonce.com/static/images/magnifying-glass-small.png" alt="Search">
+				</div>
+				<div class="navcont" >
+					<div id="stream">STREAM AND&#10;DOWNLOAD NOW</div>
+				</div>
+				<div class="navcont" >
+					<img id="album" src="https://beyonce.com/uploads/2019/07/73465540_max.jpg" alt="Album">
+				</div>
+			</div>
+		</div>
+		<div class="post">
+			<div id="imgcont">
+				<img class="postimg" id="output" src="C:\Users\sjest\Pictures\5b82ea7e71447.image.jpg" alt="Ari">
+				<input type="file" accept="image/gif, image/jpeg, image/png" name="image" id="file" class="hide_file" onchange="loadFile(event)">
+			</div>
+			<div id="titlecont">
+				<div id="title" contenteditable="true">HAPPY BIRTHDAY ARIANA</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		var loadFile = function(event) {
+			var image = document.getElementById('output');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
+	</script>
+</html>

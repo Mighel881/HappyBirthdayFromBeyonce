@@ -1,0 +1,130 @@
+body {
+	background-color: black;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0;
+	font-size: 1.5em;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	height: 10vh;
+	width: 100%;
+	background-color: white;
+	color: black;
+}
+
+.post {
+	padding-top: 10vh;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 4fr 1fr;
+	height: 90vh;
+}
+
+#logo {
+	display: inline-block;
+	position: absolute;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	transform: translateX(-50%) translateY(-50%);
+	left: 50%;
+	top: 50%;
+}
+
+#menu {
+	background-color: black;
+	width: 10vh;
+	height: 10vh;
+}
+
+#titlecont {
+	grid-row: 2;
+	position: relative;
+}
+
+#title {
+	font-weight: 500;
+	transform: scaleX(1.6) translate(-50%, -50%);
+	transform-origin: 0 0;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	grid-row: 2;
+	font-size: 1.5em;
+}
+
+#imgcont {
+	grid-row: 1;
+	position: relative;
+}
+
+.postimg {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 75%;
+	max-height: 85%;
+	border: 0.25em solid white;
+	cursor: pointer;
+}
+
+#right {
+	right: 0;
+	top: 0;
+	position: absolute;
+	height: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+#stream {
+	white-space: pre-wrap;
+	text-align: right;
+	font-weight: bold;
+	font-size: 0.6em;
+}
+
+#album {
+	height: 5vh;
+	width: 5vh;
+}
+
+#search {
+	max-width: 2.5vh;
+	max-height: 2.5vh;
+}
+
+.navcont * {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-right: 1em;
+}
+
+#hamburger {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 5fr 1fr 1fr 1fr 1fr 1fr 5fr;
+	height: 100%;
+	width: 100%;
+}
+
+.bun {
+	background: white;
+	grid-column: 2;
+}
+
+.hide_file {
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+    cursor: default;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 24px;
+    width: 100%;
+}
