@@ -9,6 +9,7 @@ body {
 	position: fixed;
 	top: 0;
 	height: 10vh;
+	height: calc(var(--vh, 1vh) * 10);
 	width: 100%;
 	background-color: white;
 	color: black;
@@ -20,6 +21,7 @@ body {
 	display: grid;
 	grid-template-rows: 4fr 1fr;
 	height: 90vh;
+	height: calc(var(--vh, 1vh) * 90);
 }
 
 #logo {
@@ -53,6 +55,7 @@ body {
 	top: 50%;
 	grid-row: 2;
 	font-size: 1.5em;
+	text-align: center;
 }
 
 #imgcont {
