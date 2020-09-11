@@ -184,7 +184,9 @@ body {
 
 	#menu {
 		height: 12.5vh;
+		height: calc(var(--vh, 1vh) * 12.5);
 		width: 12.5vh;
+		width: calc(var(--vh, 1vh) * 12.5);
 	}
 
 	#stream {
@@ -205,6 +207,18 @@ body {
 	}
 
 	#title {
-		font-size: 1em;
+		font-size: 0.75em;
+	}
+
+	.post {
+		grid-template-rows: 1fr 2fr 1fr 1fr;
+	}
+
+	#imgcont {
+		grid-row: 2;
+	}
+
+	#titlecont {
+		grid-row: 3;
 	}
 }
