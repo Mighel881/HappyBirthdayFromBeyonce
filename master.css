@@ -17,6 +17,7 @@ body {
 
 .post {
 	padding-top: 10vh;
+	padding-top: calc(var(--vh, 1vh) * 10);
 	width: 100%;
 	display: grid;
 	grid-template-rows: 4fr 1fr;
@@ -76,7 +77,6 @@ body {
 
 #right {
 	right: 0;
-	top: 0;
 	position: absolute;
 	height: 100%;
 	display: grid;
@@ -130,4 +130,33 @@ body {
     height: 100%;
     font-size: 24px;
     width: 100%;
+}
+
+@media (min-width: 800px) {
+	#right {
+		top: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.navbar {
+		height: 25vh;
+		height: calc(var(--vh, 1vh) * 25vh);
+	}
+
+	.post {
+		padding-top: 25vh;
+		padding-top: calc(var(--vh, 1vh) * 25);
+		height: 80vh;
+		height: calc(var(--vh, 1vh) * 80);
+	}
+
+	#logo {
+		font-size: 2em;
+	}
+
+	#right {
+		height: 50%;
+		bottom: 0;
+	}
 }
